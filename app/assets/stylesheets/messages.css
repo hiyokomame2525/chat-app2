@@ -62,17 +62,105 @@
 .main-chat-top{
   height: 100px;
   padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom:30px ;
 }
 
+/*右サイドでチャット名と終了*/
+.chat-name{
+  font-size: 24px;
+  margin-top:36px ;
+  color: #333;
+}
+
+.chat-end{
+  font-size: 24px;
+  border: 1px solid darkred;
+  padding: 20px;
+}
+
+.chat-end a{
+  text-decoration: none;
+  color:darkred;
+}
+
+
+   /*実際にチャット内容が記載される箇所*/
 .main-chat-middle{
   height: calc(100vh - 100px - 90px);
   background-color: #fafafa;
-  padding-top:46px 40px 0 ;
+  padding:46px 40px 0 ;
+  overflow: scroll;
 }
 
+.comments{
+  margin: 10px 0 0 0 ;
+}
+
+.top-comment{
+  display: flex;
+}
+
+.users-name{
+  font-size: 16px;
+  color: #434A54;
+
+}
+
+.times{
+  font-size: 12px;
+  color: #999;
+  padding-left: 10px;
+}
+
+.comment{
+  font-size: 14px;
+  color: #434a54;
+  margin-bottom: 40px;
+}
+
+
+   /*入力フォーム*/
 .main-chat-bottom{
   height: 90px;
   background-color: #dddddd;
   padding: 20px 40px;
+  display: flex;
+}
 
+.form-area{
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+
+.form{
+  padding-left: 10px;
+  border: none;
+  height: 50px;
+  width: 100%;
+}
+
+.submit{
+  background-color: #38aef0;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  margin-left: 15px;
+}
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
