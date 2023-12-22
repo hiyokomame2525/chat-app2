@@ -13,12 +13,43 @@
 .side-bar-top{
   height: 100px;
   padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #253141;
 }
 
+   /*名前とチャット作成のリンク装飾*/
+.user-name a {
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.chat-create a {
+  font-size: 10px;
+  color: deepskyblue;
+  padding: 14px;
+  border: 1px solid lightblue;
+  text-decoration: none;
+}
+
+  /*チャット名が並ぶ表*/
 .chat-room-names{
   height: calc(100vh - 100px);
   background-color: #2f3e51
   padding: 0px 20px;
+  overflow: scroll;
+}
+
+.room {
+  padding: 20px 20px 40px;
+
+}
+
+.room a{
+  color: white;
+  text-decoration: none;
 }
 
 /*フロント 右サイドの実装*/
