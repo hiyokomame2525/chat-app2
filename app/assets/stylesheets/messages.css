@@ -38,8 +38,8 @@
 .chat-room-names{
   height: calc(100vh - 100px);
   background-color: #2f3e51
-  padding: 0px 20px;
-  overflow: scroll;
+  padding:0px 20px;
+  overflow:scroll;
 }
 
 .room {
@@ -122,27 +122,27 @@
 
 
    /*入力フォーム*/
-.main-chat-bottom{
+.form{
   height: 90px;
   background-color: #dddddd;
   padding: 20px 40px;
   display: flex;
 }
 
-.form-area{
+.form-input{
   background-color: white;
   display: flex;
   width: 100%;
 }
 
-.form{
+.form-message{
   padding-left: 10px;
   border: none;
   height: 50px;
   width: 100%;
 }
 
-.submit{
+.form-submit{
   background-color: #38aef0;
   color: white;
   font-size: 16px;
