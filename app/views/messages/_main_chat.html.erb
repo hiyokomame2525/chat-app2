@@ -8,37 +8,7 @@
 </div>
    
 <div class ="main-chat-middle">
-  <div class ="comments">  
-    <div class ="top-comment">  
-      <div class ="users-name">
-        Erin 
-       </div>
-      <div class="times">
-        2023/12/22(Fri) 17:20
-      </div>
-    </div>
-    <div class ="bottom-comment"> 
-      <div class ="comments">
-        こんばんは
-      </div>
-    </div>
-  </div>
-
-  <div class ="comments">  
-    <div class ="top-comment">  
-      <div class ="users-name">
-        Erin 
-       </div>
-      <div class="times">
-        2023/12/22(Fri) 17:20
-      </div>
-    </div>
-    <div class ="bottom-comment"> 
-      <div class ="comment">
-        こんばんは
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: "form", local: true do |f| %>
